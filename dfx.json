@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "icpqoutes_backend": {
+      "main": "src/icpqoutes_backend/main.mo",
+      "type": "motoko"
+    },
+    "icpqoutes_frontend": {
+      "dependencies": [
+        "icpqoutes_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icpqoutes_frontend/src/index.html"
+      },
+      "source": [
+        "src/icpqoutes_frontend/assets",
+        "dist/icpqoutes_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
