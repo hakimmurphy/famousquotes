@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light dark;
+  color: black;
+  background-color: #FFF6F4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.quote {
+  font-family: 'Luckiest Guy', cursive;
+  position: relative;
+  color: #F86F03;
+  font-size: 2.7em;
+}
+
+/* .quote::before {
+  content: '';
+  height: .05em;
+  width: 100%;
+  background-color: #525FE1;
+  position: absolute;
+  top: 1.5em;
+} */
+
+.author {
+  font-family: 'PT Mono', monospace;
+  text-align: end;
+  font-weight: 500;
+  color: #525FE1;
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+@media (max-width: 1220px) {
+  .quote::before{
+    display: none;
+  }
+}
